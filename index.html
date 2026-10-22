@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CHARUSAT FTE - ITUE203 Web Development Frameworks - Master Practicals Portal">
+    <title>ITUE203 Web Development Frameworks - Master Practicals Portal | CHARUSAT</title>
+    <link rel="stylesheet" href="shared/css/common.css">
+    <style>
+        .filter-btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .practical-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .practical-num {
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+        .practical-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Master Header -->
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">CS</div>
+                <div class="sh-brand-text">
+                    <span class="title">CHARUSAT ITUE203</span>
+                    <span class="subtitle">Web Development Frameworks</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item active"><a href="index.html">All Practicals (1-15)</a></li>
+                    <li class="sh-nav-item"><a href="P-15/index.php">Integrated StudentHub</a></li>
+                    <li class="sh-nav-item"><a href="P-02/accessibility_checklist.html">Accessibility Audit</a></li>
+                    <li class="sh-nav-item"><a href="README.md">Course README</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Master Banner -->
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <span class="current">CHARUSAT Faculty of Technology & Engineering (FTE)</span>
+                <span class="sep">/</span>
+                <span>Semester 3rd, 2026-27 (ODD)</span>
+            </nav>
+            <span class="sh-practical-tag">15 Practicals Fully Implemented</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="sh-main">
+        <section style="margin-bottom: 2.5rem;">
+            <div style="max-width: 850px;">
+                <span class="badge badge-primary" style="margin-bottom: 8px;">Semester-Long Project: StudentHub</span>
+                <h1 class="text-gradient">Web Development Frameworks Laboratory Suite</h1>
+                <p class="lead-text" style="margin-top: 10px;">
+                    Welcome to the master practicals index for course <strong>ITUE203</strong>. All 15 curriculum practicals have been modularized into dedicated folders with a unified, modern design system, responsive layouts, client and server-side validation, database CRUD, and REST JSON APIs.
+                </p>
+            </div>
+        </section>
+
+        <!-- Search and Filter Bar -->
+        <div class="card" style="margin-bottom: 2rem; padding: 20px;">
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                <div style="flex: 1; min-width: 280px;">
+                    <label for="practical-search" class="form-label" style="font-size: 0.82rem;">Live Filter Practicals</label>
+                    <input type="text" id="practical-search" class="form-control" placeholder="Search by practical title, technology, or concept...">
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <span id="practical-counter" class="badge badge-info" style="font-size: 0.85rem; padding: 8px 14px;">Showing 15 of 15 Practicals</span>
+                </div>
+            </div>
+            <div class="filter-btn-group" style="margin-top: 14px; margin-bottom: 0;">
+                <button class="btn btn-sm btn-primary filter-category-btn" data-cat="all">All Modules (1-15)</button>
+                <button class="btn btn-sm btn-secondary filter-category-btn" data-cat="html-css">HTML5 & CSS3 (P1-P3)</button>
+                <button class="btn btn-sm btn-secondary filter-category-btn" data-cat="javascript">JavaScript & DOM (P4-P6)</button>
+                <button class="btn btn-sm btn-secondary filter-category-btn" data-cat="php">PHP & Sessions (P7, P9, P10)</button>
+                <button class="btn btn-sm btn-secondary filter-category-btn" data-cat="mysql">MySQL & CRUD (P8, P11, P12)</button>
+                <button class="btn btn-sm btn-secondary filter-category-btn" data-cat="capstone">API & Full-Stack (P13-P15)</button>
+            </div>
+        </div>
+
+        <!-- Practicals Grid (15 Cards) -->
+        <div id="practicals-grid" class="grid grid-3">
+
+            <!-- Practical 1 -->
+            <article class="card card-hover practical-item" data-cat="html-css" data-text="project initiation requirement analysis sitemap wireframe github setup">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 01</span>
+                            <span class="badge badge-primary">CO1</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Project Initiation, Sitemap & Wireframes</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Problem scope, user role definitions, navigation flow, interactive visual sitemap, and low-fidelity UI wireframes.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">Sitemap</span>
+                            <span class="badge badge-neutral">Wireframes</span>
+                            <span class="badge badge-neutral">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-1/sitemap.html" class="btn btn-sm btn-outline">Sitemap</a>
+                        <a href="P-1/index.html" class="btn btn-sm btn-primary">Launch P-01 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 2 -->
+            <article class="card card-hover practical-item" data-cat="html-css" data-text="semantic html5 pages accessibility ready structure wcag 2.1 aa skip link">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 02</span>
+                            <span class="badge badge-primary">CO1, CO2</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Semantic HTML5 & Accessibility-Ready Skeletons</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            11 static HTML5 pages with semantic landmarks (header, nav, main, article, aside), skip-links, and WCAG 2.1 AA checklist.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">Semantic HTML5</span>
+                            <span class="badge badge-neutral">WCAG 2.1 AA</span>
+                            <span class="badge badge-neutral">11 Pages</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-2/accessibility_checklist.html" class="btn btn-sm btn-outline">Checklist</a>
+                        <a href="P-2/index.html" class="btn btn-sm btn-primary">Launch P-02 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 3 -->
+            <article class="card card-hover practical-item" data-cat="html-css" data-text="responsive ui design css grid flexbox mobile first media queries">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 03</span>
+                            <span class="badge badge-primary">CO2</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Responsive UI Design with CSS Grid & Flexbox</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Mobile-first responsive layouts across mobile, tablet, and desktop viewports with advanced CSS Grid and Flexbox alignment.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">CSS Grid</span>
+                            <span class="badge badge-neutral">Flexbox</span>
+                            <span class="badge badge-neutral">Mobile-First</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-3/dashboard.html" class="btn btn-sm btn-outline">Dashboard</a>
+                        <a href="P-3/index.html" class="btn btn-sm btn-primary">Launch P-03 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 4 -->
+            <article class="card card-hover practical-item" data-cat="javascript" data-text="javascript dom manipulation event handling ui interactivity accordion modal slider theme localstorage">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 04</span>
+                            <span class="badge badge-primary">CO3, CO4</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">JavaScript DOM Manipulation & Interactivity</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Collapsible FAQ accordion, accessible modal popup, image/content slider, toast alerts, and localStorage user preferences.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">DOM Events</span>
+                            <span class="badge badge-neutral">Modal Popup</span>
+                            <span class="badge badge-neutral">Slider</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-4/script.js" class="btn btn-sm btn-outline">script.js</a>
+                        <a href="P-4/index.html" class="btn btn-sm btn-primary">Launch P-04 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 5 -->
+            <article class="card card-hover practical-item" data-cat="javascript" data-text="registration form frontend validation user friendly error handling regular expressions regex password strength canvas captcha">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 05</span>
+                            <span class="badge badge-primary">CO1, CO3</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Frontend Form Validation & Canvas CAPTCHA</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Rigorous regex validation for name, email, phone, live password strength meter, custom HTML5 Canvas CAPTCHA, and test matrix.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">Regex</span>
+                            <span class="badge badge-neutral">Password Meter</span>
+                            <span class="badge badge-neutral">Canvas CAPTCHA</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-5/validation.js" class="btn btn-sm btn-outline">validation.js</a>
+                        <a href="P-5/index.html" class="btn btn-sm btn-primary">Launch P-05 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 6 -->
+            <article class="card card-hover practical-item" data-cat="javascript" data-text="rendering external json data fetch api search filter sort pagination offline cache">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 06</span>
+                            <span class="badge badge-primary">CO3, CO4</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Fetch API, JSON Search, Filter & Pagination</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Renders external JSON files (events, students, faqs with 15+ records each) with debounced search, filtering, and offline cache.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">Fetch API</span>
+                            <span class="badge badge-neutral">Debounce</span>
+                            <span class="badge badge-neutral">Pagination</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-6/data/events.json" class="btn btn-sm btn-outline">events.json</a>
+                        <a href="P-6/index.html" class="btn btn-sm btn-primary">Launch P-06 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 7 -->
+            <article class="card card-hover practical-item" data-cat="php" data-text="php form processing server side validation csv json file storage csrf">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 07</span>
+                            <span class="badge badge-primary">CO1, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">PHP Form Processing & CSV/JSON Storage</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            POST handling, server-side sanitization, CSRF token validation, and file persistence into CSV and JSON with viewer page.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">PHP POST</span>
+                            <span class="badge badge-neutral">CSV / JSON</span>
+                            <span class="badge badge-neutral">CSRF Token</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-7/records.php" class="btn btn-sm btn-outline">View Records</a>
+                        <a href="P-7/index.php" class="btn btn-sm btn-primary">Launch P-07 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 8 -->
+            <article class="card card-hover practical-item" data-cat="mysql" data-text="mysql schema design er model database connectivity pdo prepared statements stored procedure">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 08</span>
+                            <span class="badge badge-primary">CO1, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">MySQL 3NF Schema, ER Model & PDO</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Complete normalized database schema with foreign keys, stored procedure for seat quota validation, and PDO connection test.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">MySQL 3NF</span>
+                            <span class="badge badge-neutral">PHP PDO</span>
+                            <span class="badge badge-neutral">Stored Procedure</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-8/test_db.php" class="btn btn-sm btn-outline">Test DB</a>
+                        <a href="P-8/index.php" class="btn btn-sm btn-primary">Launch P-08 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 9 -->
+            <article class="card card-hover practical-item" data-cat="php" data-text="secure user registration database insert duplicate email check password hashing bcrypt audit log">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 09</span>
+                            <span class="badge badge-primary">CO1, CO3, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Secure Registration & Password Hashing</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Duplicate email/username detection, cryptographic BCRYPT password hashing (`password_hash`), and transactional insert.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">password_hash()</span>
+                            <span class="badge badge-neutral">Duplicate Check</span>
+                            <span class="badge badge-neutral">Audit Log</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-9/users_list.php" class="btn btn-sm btn-outline">User Hashes</a>
+                        <a href="P-9/index.php" class="btn btn-sm btn-primary">Launch P-09 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 10 -->
+            <article class="card card-hover practical-item" data-cat="php" data-text="secure login logout sessions role based access timeout remember me token rbac password_verify">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 10</span>
+                            <span class="badge badge-primary">CO1, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Sessions, RBAC, Timeout & Remember-Me</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Authentication with `password_verify()`, session regeneration, 15-min inactivity timeout, and secure remember-me cookies.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">Sessions</span>
+                            <span class="badge badge-neutral">Timeout (15m)</span>
+                            <span class="badge badge-neutral">Remember-Me</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-10/admin_dashboard.php" class="btn btn-sm btn-outline">Admin RBAC</a>
+                        <a href="P-10/login.php" class="btn btn-sm btn-primary">Launch P-10 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 11 -->
+            <article class="card card-hover practical-item" data-cat="mysql" data-text="student management crud search filter mysql statements soft delete export csv">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 11</span>
+                            <span class="badge badge-primary">CO1, CO4, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Student Management CRUD & CSV Export</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Full CRUD for student profiles, multi-field search, department filtering, soft-delete toggle, and CSV data export.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">PDO CRUD</span>
+                            <span class="badge badge-neutral">Soft Delete</span>
+                            <span class="badge badge-neutral">CSV Export</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-11/export_csv.php" class="btn btn-sm btn-outline">CSV Export</a>
+                        <a href="P-11/index.php" class="btn btn-sm btn-primary">Launch P-11 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 12 -->
+            <article class="card card-hover practical-item" data-cat="mysql" data-text="event management crud poster upload file validation mime size security .htaccess">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 12</span>
+                            <span class="badge badge-primary">CO1, CO4, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Event CRUD with Validated Poster Upload</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Admin event management with server-side poster validation (MIME checking, 2MB size cap, safe renaming, and `.htaccess` protection).
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">File Upload</span>
+                            <span class="badge badge-neutral">MIME / 2MB</span>
+                            <span class="badge badge-neutral">.htaccess Guard</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-12/index.php" class="btn btn-sm btn-primary">Launch P-12 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 13 -->
+            <article class="card card-hover practical-item" data-cat="capstone" data-text="php json api ajax fetch based crud without page reload rest endpoints http status codes">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 13</span>
+                            <span class="badge badge-primary">CO3, CO4, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">PHP REST JSON API & Asynchronous CRUD</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            RESTful PHP JSON endpoints (GET, POST, DELETE) consumed asynchronously via Fetch API with zero page reloads and Network Inspector.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">REST API</span>
+                            <span class="badge badge-neutral">AJAX CRUD</span>
+                            <span class="badge badge-neutral">Inspector</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-13/api/events.php" class="btn btn-sm btn-outline">JSON API</a>
+                        <a href="P-13/index.html" class="btn btn-sm btn-primary">Launch P-13 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 14 -->
+            <article class="card card-hover practical-item" data-cat="capstone" data-text="admin dashboard role based access control dynamic menu audit log user status toggle analytics chart">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 14</span>
+                            <span class="badge badge-primary">CO1, CO4, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Admin Dashboard, Dynamic Menu & Audit Log</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Role-based dynamic menus, monthly event analytics charts, live AJAX user status toggling, and immutable security audit logs.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-neutral">Dynamic Menu</span>
+                            <span class="badge badge-neutral">Analytics Chart</span>
+                            <span class="badge badge-neutral">Audit Logs</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-14/index.php?role=faculty" class="btn btn-sm btn-outline">Faculty Menu</a>
+                        <a href="P-14/index.php" class="btn btn-sm btn-primary">Launch P-14 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Practical 15 -->
+            <article class="card card-hover practical-item" data-cat="capstone" data-text="final integration testing documentation github submission local deployment virtualhost test report">
+                <div class="practical-card">
+                    <div>
+                        <div class="card-header">
+                            <span class="practical-num">Practical 15</span>
+                            <span class="badge badge-primary">CO2, CO4, CO5</span>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Capstone Integration, Test Matrix & Deployment</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                            Full-stack deployable StudentHub portal, comprehensive testing matrix (functional, responsive, security), and Apache VirtualHost guide.
+                        </p>
+                        <div class="practical-meta">
+                            <span class="badge badge-success">Integrated Portal</span>
+                            <span class="badge badge-neutral">VirtualHost</span>
+                            <span class="badge badge-neutral">Test Matrix</span>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="margin-top: 16px;">
+                        <a href="P-15/DEPLOYMENT_GUIDE.md" class="btn btn-sm btn-outline">Deploy Guide</a>
+                        <a href="P-15/index.php" class="btn btn-sm btn-primary">Launch P-15 →</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Master Footer -->
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div>
+                <strong>Charotar University of Science & Technology (CHARUSAT)</strong>
+                <p style="font-size: 0.85rem; margin-top: 4px;">Faculty of Technology & Engineering (FTE) | Subject: Web Development Frameworks (ITUE203)</p>
+            </div>
+            <ul class="sh-footer-links">
+                <li><a href="P-15/index.php">Integrated Portal</a></li>
+                <li><a href="P-02/accessibility_checklist.html">Accessibility Audit</a></li>
+                <li><a href="README.md">Course README</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="shared/js/common.js"></script>
+    <script>
+        // Live Practical Search & Category Filter
+        const searchInput = document.getElementById('practical-search');
+        const filterBtns = document.querySelectorAll('.filter-category-btn');
+        const cards = document.querySelectorAll('.practical-item');
+        const counter = document.getElementById('practical-counter');
+
+        let activeCat = 'all';
+
+        function updateFilter() {
+            const query = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const text = card.dataset.text.toLowerCase();
+                const cat = card.dataset.cat;
+                const matchesText = text.includes(query);
+                const matchesCat = activeCat === 'all' || cat === activeCat;
+
+                if (matchesText && matchesCat) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            counter.textContent = `Showing ${visibleCount} of ${cards.length} Practicals`;
+        }
+
+        searchInput.addEventListener('input', updateFilter);
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(b => {
+                    b.classList.remove('btn-primary');
+                    b.classList.add('btn-secondary');
+                });
+                this.classList.remove('btn-secondary');
+                this.classList.add('btn-primary');
+
+                activeCat = this.dataset.cat;
+                updateFilter();
+            });
+        });
+    </script>
+</body>
+</html>

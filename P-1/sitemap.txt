@@ -1,0 +1,17 @@
+index.html
+    ├── about.html
+    ├── calendar.html
+    ├── contact.html
+    ├── events.html
+    ├── form.html
+    ├── forms.html
+    ├── gallery.html
+    ├── img
+    │   └── img.heic
+    ├── login.html  
+    ├── register.html  
+    ├── resources.html
+    ├── script
+    │   └── script.js
+    └── style
+        └── style.css

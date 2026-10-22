@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Campus Events and Workshops Directory - StudentHub">
+    <title>Events - StudentHub Portal | Practical 2</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 02</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item"><a href="index.html">Home</a></li>
+                    <li class="sh-nav-item"><a href="about.html">About</a></li>
+                    <li class="sh-nav-item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="sh-nav-item active"><a href="events.html">Events</a></li>
+                    <li class="sh-nav-item"><a href="profile.html">Profile</a></li>
+                    <li class="sh-nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="sh-nav-item"><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <a href="index.html">Practical 02</a>
+                <span class="sep">/</span>
+                <span class="current">Events</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 02: Semantic HTML5</span>
+        </div>
+    </div>
+
+    <main id="main-content" class="sh-main">
+        <header style="margin-bottom: 2rem;">
+            <h1 class="text-gradient">University Events & Workshops</h1>
+            <p class="lead-text">Discover upcoming technical hackathons, guest lectures, cultural fests, and athletic competitions at CHARUSAT.</p>
+        </header>
+
+        <div class="grid grid-3">
+            <article class="card card-hover">
+                <header class="card-header">
+                    <div>
+                        <span class="badge badge-primary">Technical</span>
+                        <h3 style="margin-top: 8px;">Full-Stack Cloud Summit 2026</h3>
+                    </div>
+                </header>
+                <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1rem;">
+                    Hands-on masterclass on containerization, serverless architectures, and microservices deployment with industry leaders.
+                </p>
+                <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.2rem;">
+                    <div>📅 <time datetime="2026-11-05">November 5, 2026</time></div>
+                    <div>📍 Auditorium B, FTE Campus</div>
+                    <div>👥 120 Seats Available</div>
+                </div>
+                <footer class="card-footer">
+                    <span class="badge badge-success">Registration Open</span>
+                    <a href="register.html" class="btn btn-sm btn-primary">RSVP Now</a>
+                </footer>
+            </article>
+
+            <article class="card card-hover">
+                <header class="card-header">
+                    <div>
+                        <span class="badge badge-warning">Hackathon</span>
+                        <h3 style="margin-top: 8px;">CHARUSAT Hack-a-Fest 4.0</h3>
+                    </div>
+                </header>
+                <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1rem;">
+                    36 hours of intense prototyping, AI development, and problem solving with mentorship from leading tech incubators.
+                </p>
+                <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.2rem;">
+                    <div>📅 <time datetime="2026-11-18">November 18-19, 2026</time></div>
+                    <div>📍 Central Computing Center</div>
+                    <div>👥 Teams of 3-4 Students</div>
+                </div>
+                <footer class="card-footer">
+                    <span class="badge badge-success">Free Entry</span>
+                    <a href="register.html" class="btn btn-sm btn-primary">Register Team</a>
+                </footer>
+            </article>
+
+            <article class="card card-hover">
+                <header class="card-header">
+                    <div>
+                        <span class="badge badge-info">Career</span>
+                        <h3 style="margin-top: 8px;">Industry Connect & Placement Seminar</h3>
+                    </div>
+                </header>
+                <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1rem;">
+                    Interactive session with alumni working at Google, Microsoft, and Amazon on resume preparation and technical interview strategies.
+                </p>
+                <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.2rem;">
+                    <div>📅 <time datetime="2026-11-28">November 28, 2026</time></div>
+                    <div>📍 Seminar Hall 1, IT Dept</div>
+                    <div>👥 200 Seats</div>
+                </div>
+                <footer class="card-footer">
+                    <span class="badge badge-primary">Certificate</span>
+                    <a href="register.html" class="btn btn-sm btn-outline">Save Seat</a>
+                </footer>
+            </article>
+        </div>
+    </main>
+
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div><strong>StudentHub Portal</strong> — CHARUSAT FTE | ITUE203 Practical 02</div>
+            <ul class="sh-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+</body>
+</html>

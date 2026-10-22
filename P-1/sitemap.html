@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - StudentHub Portal | Practical 1</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Unified Header -->
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 01</span>
+                </div>
+            </a>
+            <ul class="sh-nav-menu">
+                <li class="sh-nav-item"><a href="index.html">Home</a></li>
+                <li class="sh-nav-item"><a href="about.html">About</a></li>
+                <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                <li class="sh-nav-item"><a href="calendar.html">Calendar</a></li>
+                <li class="sh-nav-item active"><a href="sitemap.html">Sitemap</a></li>
+                <li class="sh-nav-item"><a href="wireframes.html">Wireframes</a></li>
+                <li class="sh-nav-item"><a href="login.html">Login</a></li>
+                <li class="sh-nav-item"><a href="register.html">Register</a></li>
+            </ul>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Practical Breadcrumb Banner -->
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <a href="index.html">Practical 01</a>
+                <span class="sep">/</span>
+                <span class="current">Sitemap</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 01: Project Initiation</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="sh-main">
+        <div style="margin-bottom: 2rem;">
+            <h1 class="text-gradient">StudentHub Architecture & Sitemap</h1>
+            <p class="lead-text">Complete visual navigation map and modular breakdown across all user roles and portal components.</p>
+        </div>
+
+        <div class="grid grid-3">
+            <!-- Student Module -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>👨‍🎓 Student Role Module</h3>
+                    <span class="badge badge-primary">Primary Access</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Core features available to registered and verified students.</p>
+                <ul style="padding-left: 1.2rem; line-height: 1.8; font-size: 0.95rem;">
+                    <li><a href="index.html"><strong>Landing Page</strong> (index.html)</a></li>
+                    <li><a href="about.html"><strong>About Portal</strong> (about.html)</a></li>
+                    <li><a href="events.html"><strong>Campus Events</strong> (events.html)</a></li>
+                    <li><a href="calendar.html"><strong>Academic Calendar</strong> (calendar.html)</a></li>
+                    <li><a href="resources.html"><strong>Course Resources</strong> (resources.html)</a></li>
+                    <li><a href="register.html"><strong>Student Registration</strong> (register.html)</a></li>
+                    <li><a href="login.html"><strong>Account Login</strong> (login.html)</a></li>
+                </ul>
+            </div>
+
+            <!-- Faculty & Coordinator Module -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>👩‍🏫 Faculty & Coordinator</h3>
+                    <span class="badge badge-info">Academic Staff</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Faculty workflows for curriculum, schedules, and event organization.</p>
+                <ul style="padding-left: 1.2rem; line-height: 1.8; font-size: 0.95rem;">
+                    <li><strong>Event Management:</strong> Publish & moderate workshops</li>
+                    <li><strong>Resource Sharing:</strong> Upload lecture slides & lab manuals</li>
+                    <li><strong>Attendance & Roster:</strong> View participant registrations</li>
+                    <li><strong>Notice Board:</strong> Broadcast department announcements</li>
+                    <li><a href="contact.html"><strong>Campus Inquiries</strong> (contact.html)</a></li>
+                    <li><a href="form.html"><strong>Interactive Evaluation</strong> (form.html)</a></li>
+                </ul>
+            </div>
+
+            <!-- Administrator Module -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>🛡️ System Administration</h3>
+                    <span class="badge badge-warning">Admin Only</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Central control panel for site moderation, security, and metrics.</p>
+                <ul style="padding-left: 1.2rem; line-height: 1.8; font-size: 0.95rem;">
+                    <li><strong>Admin Dashboard:</strong> Real-time student & event statistics</li>
+                    <li><strong>User Moderation:</strong> Status toggle (Active / Inactive)</li>
+                    <li><strong>Student Management:</strong> Full CRUD operations with CSV export</li>
+                    <li><strong>Event Poster Moderation:</strong> Validate file uploads</li>
+                    <li><strong>Audit Logs:</strong> Immutable IP-tracked activity trail</li>
+                    <li><strong>System Health:</strong> DB connection diagnostics</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Visual Flow Diagram Card -->
+        <div class="card" style="margin-top: 2rem;">
+            <div class="card-header">
+                <h2>Portal Information Architecture & Data Flow</h2>
+                <a href="wireframes.html" class="btn btn-sm btn-primary">View Wireframes →</a>
+            </div>
+            <div style="background: var(--bg-subtle); padding: 1.5rem; border-radius: var(--radius-md); font-family: var(--font-mono); font-size: 0.85rem; overflow-x: auto; line-height: 1.6;">
+[ Public Visitors ]
+       │
+       ├──► index.html (Hero, Announcements, Calendar Preview)
+       ├──► about.html (Vision, Faculty, Infrastructure)
+       ├──► events.html (Upcoming Workshops & Hackathons)
+       ├──► resources.html (Subject Archives)
+       ├──► contact.html & feedback.html (Inquiry & Rating)
+       │
+       ▼
+[ Authentication Gateway ]
+       ├──► register.html (Regex Validation, Password Meter, CAPTCHA)
+       └──► login.html (Session Auth, Timeout, Remember-Me)
+               │
+               ├────► [ Student Role ] ──► Student Dashboard & Event RSVP
+               │
+               └────► [ Admin Role ]   ──► Admin Panel, CRUD & Audit Logs
+            </div>
+        </div>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div>
+                <strong>StudentHub Portal</strong> — Charotar University of Science & Technology (CHARUSAT)
+                <p style="font-size: 0.8rem; margin-top: 4px;">Faculty of Technology & Engineering (FTE) | ITUE203</p>
+            </div>
+            <ul class="sh-footer-links">
+                <li><a href="../index.html">Practicals Hub</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="README.md">Documentation</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+</body>
+</html>

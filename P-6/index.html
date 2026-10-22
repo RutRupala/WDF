@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 6: Fetch API Dynamic Rendering, Search, Filter & Pagination</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 06</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item active"><a href="index.html">JSON Fetch Explorer</a></li>
+                    <li class="sh-nav-item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                    <li class="sh-nav-item"><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <span class="current">Practical 06</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 06: Fetch API & JSON</span>
+        </div>
+    </div>
+
+    <main id="main-content" class="sh-main">
+        <header style="margin-bottom: 2rem;">
+            <h1 class="text-gradient">Dynamic JSON Data Rendering with Fetch API</h1>
+            <p class="lead-text">Consuming asynchronous REST/JSON datasets with debounced live search, dynamic category filtering, multi-field sorting, paginated rendering, and localStorage offline fallback.</p>
+        </header>
+
+        <!-- Dataset Tab Switcher -->
+        <div style="display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <button class="btn btn-primary p6-tab-btn" data-tab="events">📅 Campus Events (16)</button>
+            <button class="btn btn-secondary p6-tab-btn" data-tab="students">👨‍🎓 Student Profiles (16)</button>
+            <button class="btn btn-secondary p6-tab-btn" data-tab="faqs">❓ Knowledgebase FAQs (15)</button>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="card" style="margin-bottom: 1.5rem; padding: 18px;">
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 14px; align-items: center;">
+                <div>
+                    <label for="p6-search-input" class="form-label" style="font-size: 0.82rem;">Live Debounced Search</label>
+                    <input type="text" id="p6-search-input" class="form-control" placeholder="Search by name, title, keywords...">
+                </div>
+                <div>
+                    <label for="p6-category-filter" class="form-label" style="font-size: 0.82rem;">Filter by Category</label>
+                    <select id="p6-category-filter" class="form-select">
+                        <option value="ALL">All Categories</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="p6-sort-select" class="form-label" style="font-size: 0.82rem;">Sort Results</label>
+                    <select id="p6-sort-select" class="form-select">
+                        <option value="az">Alphabetical (A to Z)</option>
+                        <option value="za">Alphabetical (Z to A)</option>
+                        <option value="num">Highest Metric (Seats / CGPA / Views)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="p6-status-banner" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 10px;"></div>
+        </div>
+
+        <!-- Render Target Grid -->
+        <div id="p6-data-container" class="grid grid-3" style="margin-bottom: 2rem;">
+            <!-- Dynamic Cards injected via JS -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="card" style="display: flex; justify-content: space-between; align-items: center; padding: 14px 20px;">
+            <button id="p6-prev-page" class="btn btn-sm btn-secondary" disabled>◀ Previous</button>
+            <span id="p6-page-info" style="font-weight: 600; font-size: 0.9rem;">Page 1 of 1</span>
+            <button id="p6-next-page" class="btn btn-sm btn-primary">Next ▶</button>
+        </div>
+    </main>
+
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div><strong>StudentHub Portal</strong> — CHARUSAT FTE | ITUE203 Practical 06</div>
+            <ul class="sh-footer-links">
+                <li><a href="../index.html">Practicals Hub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

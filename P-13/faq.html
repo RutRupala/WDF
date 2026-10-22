@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions - StudentHub">
+    <title>FAQ - StudentHub Portal | Practical 2</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+    <style>
+        details {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            transition: var(--transition);
+        }
+        details[open] {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-sm);
+        }
+        summary {
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-main);
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::after {
+            content: "＋";
+            font-size: 1.2rem;
+            color: var(--primary);
+            transition: transform 0.2s;
+        }
+        details[open] summary::after {
+            content: "−";
+        }
+        details p {
+            margin-top: 12px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 02</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item"><a href="index.html">Home</a></li>
+                    <li class="sh-nav-item"><a href="about.html">About</a></li>
+                    <li class="sh-nav-item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                    <li class="sh-nav-item active"><a href="faq.html">FAQ</a></li>
+                    <li class="sh-nav-item"><a href="feedback.html">Feedback</a></li>
+                    <li class="sh-nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <a href="index.html">Practical 02</a>
+                <span class="sep">/</span>
+                <span class="current">FAQ</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 02: Semantic HTML5</span>
+        </div>
+    </div>
+
+    <main id="main-content" class="sh-main">
+        <header style="margin-bottom: 2rem;">
+            <h1 class="text-gradient">Frequently Asked Questions</h1>
+            <p class="lead-text">Find answers to commonly asked questions about course enrollment, event registration, and portal access.</p>
+        </header>
+
+        <section aria-labelledby="general-faqs">
+            <h2 id="general-faqs" style="margin-bottom: 16px;">General Portal Inquiries</h2>
+
+            <details open>
+                <summary>How do I register for campus hackathons and workshops?</summary>
+                <p>Navigate to the <strong>Events</strong> page from the navigation bar. Click on any event card to view rules, schedule, and team requirements. Hit the <em>RSVP Now</em> button to confirm your registration using your student ID.</p>
+            </details>
+
+            <details>
+                <summary>Can I update my registered email and contact number?</summary>
+                <p>Yes. Go to your <strong>Profile</strong> page and click <em>Edit Profile</em>. For official student ID and enrollment changes, please contact the FTE Academic Registrar office.</p>
+            </details>
+
+            <details>
+                <summary>What are the minimum browser requirements for StudentHub?</summary>
+                <p>StudentHub is built with modern web standards (HTML5, CSS Grid, ES6+). It supports Google Chrome 90+, Mozilla Firefox 88+, Microsoft Edge 90+, and Safari 14+ across desktop and mobile devices.</p>
+            </details>
+
+            <details>
+                <summary>Who do I contact if I get locked out of my account?</summary>
+                <p>Use the <strong>Contact Us</strong> form under the Technical Support category, or reach out to the campus IT department in Building C, Room 102.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div><strong>StudentHub Portal</strong> — CHARUSAT FTE | ITUE203 Practical 02</div>
+            <ul class="sh-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+</body>
+</html>

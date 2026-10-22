@@ -1,0 +1,18 @@
+[
+  {"id": 1, "title": "National Cloud Summit 2026", "category": "Technical", "date": "2026-11-05", "venue": "FTE Auditorium B", "seats": 150, "organizer": "IT Dept", "status": "Upcoming"},
+  {"id": 2, "title": "CHARUSAT Hack-a-Fest 4.0", "category": "Hackathon", "date": "2026-11-18", "venue": "Central Computing Lab", "seats": 80, "organizer": "CSI Student Chapter", "status": "Upcoming"},
+  {"id": 3, "title": "AI & Generative Models Workshop", "category": "Technical", "date": "2026-11-22", "venue": "Seminar Hall 1", "seats": 60, "organizer": "AIML Dept", "status": "Upcoming"},
+  {"id": 4, "title": "Spoural 2027 Sports Meet", "category": "Sports", "date": "2026-12-02", "venue": "University Sports Ground", "seats": 400, "organizer": "Sports Council", "status": "Upcoming"},
+  {"id": 5, "title": "Industry Career & Internship Expo", "category": "Career", "date": "2026-12-10", "venue": "Convention Center", "seats": 300, "organizer": "Training & Placement Cell", "status": "Upcoming"},
+  {"id": 6, "title": "Cybersecurity & Ethical Hacking Bootcamp", "category": "Technical", "date": "2026-12-15", "venue": "Network Security Lab", "seats": 45, "organizer": "IT Dept", "status": "Upcoming"},
+  {"id": 7, "title": "Web3 & Blockchain Symposium", "category": "Technical", "date": "2026-12-20", "venue": "Auditorium A", "seats": 120, "organizer": "IEEE Student Branch", "status": "Upcoming"},
+  {"id": 8, "title": "Vrund Cultural Evening", "category": "Cultural", "date": "2027-01-08", "venue": "Open Air Amphitheatre", "seats": 500, "organizer": "Cultural Committee", "status": "Upcoming"},
+  {"id": 9, "title": "Mobile App Dev with Flutter", "category": "Technical", "date": "2027-01-14", "venue": "Lab 4, CE Building", "seats": 50, "organizer": "Google Developer Group", "status": "Upcoming"},
+  {"id": 10, "title": "Robotics & Drone Flight Challenge", "category": "Technical", "date": "2027-01-22", "venue": "Mechanical Workshop Yard", "seats": 70, "organizer": "Robotics Club", "status": "Upcoming"},
+  {"id": 11, "title": "Alumni Mentorship Roundtable", "category": "Career", "date": "2027-02-05", "venue": "Executive Lounge", "seats": 40, "organizer": "Alumni Association", "status": "Upcoming"},
+  {"id": 12, "title": "Inter-College Cricket Tournament", "category": "Sports", "date": "2027-02-12", "venue": "Cricket Ground", "seats": 200, "organizer": "Sports Council", "status": "Upcoming"},
+  {"id": 13, "title": "Full-Stack React & Node.js Crash Course", "category": "Technical", "date": "2027-02-20", "venue": "Virtual / Hybrid", "seats": 250, "organizer": "IT Dept", "status": "Upcoming"},
+  {"id": 14, "title": "Green Energy & Clean Tech Seminar", "category": "Research", "date": "2027-03-01", "venue": "Civil Seminar Hall", "seats": 90, "organizer": "Research Cell", "status": "Upcoming"},
+  {"id": 15, "title": "Annual Research Paper Showcase", "category": "Research", "date": "2027-03-15", "venue": "FTE Library Atrium", "seats": 100, "organizer": "Dean FTE Office", "status": "Upcoming"},
+  {"id": 16, "title": "Design Thinking & UI/UX Masterclass", "category": "Technical", "date": "2027-03-25", "venue": "Design Studio 2", "seats": 50, "organizer": "Design Club", "status": "Upcoming"}
+]

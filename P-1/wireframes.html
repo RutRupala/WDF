@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframes - StudentHub Portal | Practical 1</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+    <style>
+        .wireframe-box {
+            border: 2px dashed var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            background: var(--bg-subtle);
+            margin-bottom: 2rem;
+        }
+        .wf-bar {
+            height: 14px;
+            background: var(--border-color);
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        .wf-rect {
+            background: var(--border-color);
+            border-radius: 6px;
+            display: grid;
+            place-items: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 01</span>
+                </div>
+            </a>
+            <ul class="sh-nav-menu">
+                <li class="sh-nav-item"><a href="index.html">Home</a></li>
+                <li class="sh-nav-item"><a href="sitemap.html">Sitemap</a></li>
+                <li class="sh-nav-item active"><a href="wireframes.html">Wireframes</a></li>
+                <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                <li class="sh-nav-item"><a href="register.html">Register</a></li>
+            </ul>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <a href="index.html">Practical 01</a>
+                <span class="sep">/</span>
+                <span class="current">Low-Fidelity Wireframes</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 01: UI Planning</span>
+        </div>
+    </div>
+
+    <main id="main-content" class="sh-main">
+        <div style="margin-bottom: 2rem;">
+            <h1 class="text-gradient">Low-Fidelity UI Wireframes</h1>
+            <p class="lead-text">Architectural wireframes defining visual hierarchy, responsive layout divisions, and module placements for StudentHub pages.</p>
+        </div>
+
+        <!-- Wireframe 1: Home Page -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <div class="card-header">
+                <h3>1. Home Page Wireframe (index.html)</h3>
+                <span class="badge badge-primary">Landing Layout</span>
+            </div>
+            <div class="wireframe-box">
+                <!-- Nav wireframe -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+                    <div class="wf-rect" style="width: 130px; height: 32px;">[ Logo / Brand ]</div>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="wf-bar" style="width: 60px; margin: 0;"></div>
+                        <div class="wf-bar" style="width: 60px; margin: 0;"></div>
+                        <div class="wf-bar" style="width: 60px; margin: 0;"></div>
+                        <div class="wf-bar" style="width: 60px; margin: 0;"></div>
+                    </div>
+                </div>
+                <!-- Hero wireframe -->
+                <div class="wf-rect" style="height: 180px; margin-bottom: 1.5rem; flex-direction: column; gap: 10px; display: flex; justify-content: center; align-items: center;">
+                    <div style="font-size: 1.1rem; font-weight: 700;">[ Hero Banner: Welcome to StudentHub ]</div>
+                    <div style="font-size: 0.85rem;">[ Subtitle: Academic updates, event registrations & student resources ]</div>
+                    <div style="display: flex; gap: 10px; margin-top: 10px;">
+                        <div class="wf-rect" style="width: 110px; height: 32px; background: var(--border-subtle);">[ Button 1 ]</div>
+                        <div class="wf-rect" style="width: 110px; height: 32px; background: var(--border-subtle);">[ Button 2 ]</div>
+                    </div>
+                </div>
+                <!-- 3-column feature grid -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                    <div class="wf-rect" style="height: 120px;">[ Quick Link: Events ]</div>
+                    <div class="wf-rect" style="height: 120px;">[ Quick Link: Calendar ]</div>
+                    <div class="wf-rect" style="height: 120px;">[ Quick Link: Resources ]</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wireframe 2: Dashboard -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <div class="card-header">
+                <h3>2. Student & Admin Dashboard Wireframe (dashboard.html / admin.html)</h3>
+                <span class="badge badge-info">2-Column Layout</span>
+            </div>
+            <div class="wireframe-box">
+                <!-- 4 KPI Metrics -->
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 1.5rem;">
+                    <div class="wf-rect" style="height: 70px;">[ Stat: 1,250 Students ]</div>
+                    <div class="wf-rect" style="height: 70px;">[ Stat: 18 Events ]</div>
+                    <div class="wf-rect" style="height: 70px;">[ Stat: 485 RSVPs ]</div>
+                    <div class="wf-rect" style="height: 70px;">[ Stat: 99.4% Uptime ]</div>
+                </div>
+                <!-- Left-Right Split -->
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px;">
+                    <div class="wf-rect" style="height: 220px; display: flex; flex-direction: column; justify-content: center; gap: 8px;">
+                        <div>[ Main Content: Interactive Schedule / Data Table ]</div>
+                        <div class="wf-bar" style="width: 80%;"></div>
+                        <div class="wf-bar" style="width: 70%;"></div>
+                        <div class="wf-bar" style="width: 60%;"></div>
+                    </div>
+                    <div class="wf-rect" style="height: 220px; display: flex; flex-direction: column; justify-content: center; gap: 8px;">
+                        <div>[ Sidebar: Upcoming Deadlines & Announcements ]</div>
+                        <div class="wf-bar" style="width: 85%;"></div>
+                        <div class="wf-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div>
+                <strong>StudentHub Portal</strong> — CHARUSAT FTE | ITUE203
+            </div>
+            <ul class="sh-footer-links">
+                <li><a href="../index.html">Practicals Hub</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="README.md">Documentation</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+</body>
+</html>

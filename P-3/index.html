@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub - CHARUSAT Academic & Campus Portal">
+    <title>Home - StudentHub Portal | Practical 2</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Semantic Header & Navigation -->
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 02</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item active"><a href="index.html">Home</a></li>
+                    <li class="sh-nav-item"><a href="about.html">About</a></li>
+                    <li class="sh-nav-item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                    <li class="sh-nav-item"><a href="profile.html">Profile</a></li>
+                    <li class="sh-nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="sh-nav-item"><a href="admin.html">Admin</a></li>
+                    <li class="sh-nav-item"><a href="faq.html">FAQ</a></li>
+                    <li class="sh-nav-item"><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <a href="login.html" class="btn btn-sm btn-outline">Log In</a>
+                <a href="register.html" class="btn btn-sm btn-primary">Register</a>
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Semantic Breadcrumb Navigation -->
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <span class="current">Practical 03</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 03: Responsive Grid & Flexbox</span>
+        </div>
+    </div>
+
+    <!-- Semantic Main Region -->
+    <main id="main-content" class="sh-main">
+        <!-- Hero Section -->
+        <section class="card card-hover" style="margin-bottom: 2.5rem; background: linear-gradient(135deg, var(--bg-card) 0%, var(--primary-subtle) 100%);">
+            <div style="max-width: 800px;">
+                <span class="badge badge-primary" style="margin-bottom: 12px;">Charusat Student Portal</span>
+                <h1 class="text-gradient">Empowering Student Success & Collaboration</h1>
+                <p class="lead-text" style="margin: 14px 0 24px;">Welcome to the unified StudentHub academic portal. Discover campus announcements, register for workshops, track academic progress, and connect with faculty across departments.</p>
+                <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                    <a href="events.html" class="btn btn-primary">Explore Campus Events</a>
+                    <a href="dashboard.html" class="btn btn-secondary">Student Dashboard</a>
+                    <a href="accessibility_checklist.html" class="btn btn-outline">Accessibility Checklist</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Grid with Article & Aside -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 28px;">
+            <!-- Left: Articles Section -->
+            <section aria-labelledby="latest-news-heading">
+                <h2 id="latest-news-heading" style="margin-bottom: 18px;">Latest Campus Announcements</h2>
+
+                <article class="card" style="margin-bottom: 20px;">
+                    <header class="card-header">
+                        <h3>National Hackathon 2026 Registration Open</h3>
+                        <time datetime="2026-10-25" style="color: var(--text-muted); font-size: 0.85rem;">Oct 25, 2026</time>
+                    </header>
+                    <p style="color: var(--text-secondary); margin-bottom: 14px;">The Department of Information Technology invites undergraduate and postgraduate teams to register for the 36-hour hackathon. Top cash prizes up to INR 1,00,000.</p>
+                    <footer class="card-footer">
+                        <span class="badge badge-success">Tech Competition</span>
+                        <a href="events.html" class="btn btn-sm btn-outline">Read Event Details →</a>
+                    </footer>
+                </article>
+
+                <article class="card" style="margin-bottom: 20px;">
+                    <header class="card-header">
+                        <h3>End-Semester Examination Time Table Published</h3>
+                        <time datetime="2026-10-18" style="color: var(--text-muted); font-size: 0.85rem;">Oct 18, 2026</time>
+                    </header>
+                    <p style="color: var(--text-secondary); margin-bottom: 14px;">The 3rd Semester ODD 2026-27 schedule is now active. Students can verify slot allocations and download their hall tickets from the academic portal.</p>
+                    <footer class="card-footer">
+                        <span class="badge badge-info">Academics</span>
+                        <a href="dashboard.html" class="btn btn-sm btn-outline">View Exam Schedule →</a>
+                    </footer>
+                </article>
+            </section>
+
+            <!-- Right: Semantic Aside -->
+            <aside aria-labelledby="sidebar-heading">
+                <h2 id="sidebar-heading" style="margin-bottom: 18px; font-size: 1.4rem;">Quick Navigation</h2>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Key Portal Modules</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                        <li><a href="register.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: flex-start;">📝 Student Registration</a></li>
+                        <li><a href="login.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: flex-start;">🔐 User Login</a></li>
+                        <li><a href="dashboard.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: flex-start;">📊 Academic Dashboard</a></li>
+                        <li><a href="profile.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: flex-start;">👤 Student Profile</a></li>
+                        <li><a href="admin.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: flex-start;">🛡️ Admin Panel</a></li>
+                        <li><a href="faq.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: flex-start;">❓ Student FAQ</a></li>
+                        <li><a href="feedback.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: flex-start;">💬 Submit Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: var(--primary-subtle); border-color: rgba(79, 70, 229, 0.2);">
+                    <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Campus Helpdesk</h3>
+                    <address style="font-style: normal; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                        CHARUSAT Campus, Changa<br>
+                        District: Anand, Gujarat - 388421<br>
+                        Email: <a href="mailto:info@charusat.ac.in">info@charusat.ac.in</a><br>
+                        Phone: +91 2697 265011
+                    </address>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Semantic Footer -->
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div>
+                <strong>StudentHub Portal</strong> — Charotar University of Science & Technology (CHARUSAT)
+                <p style="font-size: 0.8rem; margin-top: 4px;">Faculty of Technology & Engineering (FTE) | ITUE203 Practical 02</p>
+            </div>
+            <ul class="sh-footer-links">
+                <li><a href="accessibility_checklist.html">Accessibility Audit</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+</body>
+</html>

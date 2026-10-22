@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure Student Login - StudentHub Portal">
+    <title>Login - StudentHub Portal | Practical 2</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 02</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item"><a href="index.html">Home</a></li>
+                    <li class="sh-nav-item"><a href="about.html">About</a></li>
+                    <li class="sh-nav-item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                    <li class="sh-nav-item"><a href="register.html">Register</a></li>
+                    <li class="sh-nav-item active"><a href="login.html">Login</a></li>
+                    <li class="sh-nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <a href="index.html">Practical 02</a>
+                <span class="sep">/</span>
+                <span class="current">Login</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 02: Semantic HTML5</span>
+        </div>
+    </div>
+
+    <main id="main-content" class="sh-main">
+        <section class="card" style="max-width: 460px; margin: 2rem auto;">
+            <header class="card-header">
+                <div>
+                    <h1 class="text-gradient" style="font-size: 1.7rem;">Welcome Back</h1>
+                    <p style="color: var(--text-muted); font-size: 0.88rem; margin-top: 4px;">Sign in to access your student dashboard.</p>
+                </div>
+            </header>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username" class="form-label">Student ID or Email <span class="req" aria-hidden="true">*</span></label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="e.g. 24IT001 or student@charusat.edu.in" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                        <label for="password" class="form-label" style="margin-bottom: 0;">Password <span class="req" aria-hidden="true">*</span></label>
+                        <a href="contact.html" style="font-size: 0.8rem;">Forgot password?</a>
+                    </div>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-check">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span>Remember this device for 30 days</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+            </form>
+
+            <footer class="card-footer" style="justify-content: center; font-size: 0.88rem;">
+                New to CHARUSAT StudentHub?&nbsp;<a href="register.html"><strong>Register here</strong></a>
+            </footer>
+        </section>
+    </main>
+
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div><strong>StudentHub Portal</strong> — CHARUSAT FTE | ITUE203 Practical 02</div>
+            <ul class="sh-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+</body>
+</html>

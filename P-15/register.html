@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration - StudentHub Portal">
+    <title>Register - StudentHub Portal | Practical 2</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 02</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item"><a href="index.html">Home</a></li>
+                    <li class="sh-nav-item"><a href="about.html">About</a></li>
+                    <li class="sh-nav-item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                    <li class="sh-nav-item active"><a href="register.html">Register</a></li>
+                    <li class="sh-nav-item"><a href="login.html">Login</a></li>
+                    <li class="sh-nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <a href="index.html">Practical 02</a>
+                <span class="sep">/</span>
+                <span class="current">Register</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 02: Semantic HTML5</span>
+        </div>
+    </div>
+
+    <main id="main-content" class="sh-main">
+        <section class="card" style="max-width: 680px; margin: 0 auto;">
+            <header class="card-header">
+                <div>
+                    <h1 class="text-gradient" style="font-size: 1.8rem;">Create Student Account</h1>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Join the CHARUSAT StudentHub portal community.</p>
+                </div>
+                <span class="badge badge-primary">Step 1 of 1</span>
+            </header>
+
+            <form action="#" method="POST" novalidate>
+                <fieldset style="border: none; padding: 0; margin: 0;">
+                    <legend style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0);">Student Registration Information</legend>
+
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Full Name <span class="req" aria-hidden="true">*</span></label>
+                        <input type="text" id="fullname" name="fullname" class="form-control" placeholder="e.g. Rahul Patel" required aria-required="true" aria-describedby="name-hint">
+                        <span id="name-hint" class="form-hint">Enter your name as registered in university records.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address <span class="req" aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="student@charusat.edu.in" required aria-required="true" aria-describedby="email-hint">
+                        <span id="email-hint" class="form-hint">Preferably your CHARUSAT university email id.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile" class="form-label">Mobile Number <span class="req" aria-hidden="true">*</span></label>
+                        <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="9876543210" required aria-required="true" pattern="[6-9][0-9]{9}" aria-describedby="mobile-hint">
+                        <span id="mobile-hint" class="form-hint">10-digit Indian mobile number.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department" class="form-label">Academic Department <span class="req" aria-hidden="true">*</span></label>
+                        <select id="department" name="department" class="form-select" required aria-required="true">
+                            <option value="">-- Select Department --</option>
+                            <option value="IT">Information Technology (IT)</option>
+                            <option value="CSE">Computer Science & Engineering (CSE)</option>
+                            <option value="CE">Computer Engineering (CE)</option>
+                            <option value="AIML">Artificial Intelligence & Machine Learning</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Account Password <span class="req" aria-hidden="true">*</span></label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Minimum 8 characters" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password" class="form-label">Confirm Password <span class="req" aria-hidden="true">*</span></label>
+                        <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Re-enter password" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-check">
+                            <input type="checkbox" id="terms" name="terms" required aria-required="true">
+                            <span>I agree to the <a href="about.html">CHARUSAT StudentHub Terms & Code of Conduct</a></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Complete Registration</button>
+                </fieldset>
+            </form>
+
+            <footer class="card-footer" style="justify-content: center; font-size: 0.9rem;">
+                Already have an account?&nbsp;<a href="login.html"><strong>Log In here</strong></a>
+            </footer>
+        </section>
+    </main>
+
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div><strong>StudentHub Portal</strong> — CHARUSAT FTE | ITUE203 Practical 02</div>
+            <ul class="sh-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4: JavaScript DOM Manipulation & Interactivity</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+    <style>
+        .p4-faq-header {
+            width: 100%;
+            padding: 14px 18px;
+            text-align: left;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-main);
+            margin-top: 10px;
+        }
+        .p4-faq-body {
+            display: none;
+            padding: 14px 18px;
+            border: 1px solid var(--border-color);
+            border-top: none;
+            background: var(--bg-card);
+            border-bottom-left-radius: var(--radius-sm);
+            border-bottom-right-radius: var(--radius-sm);
+            color: var(--text-secondary);
+        }
+        .slider-box {
+            position: relative;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            text-align: center;
+            min-height: 200px;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 04</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item active"><a href="index.html">Home</a></li>
+                    <li class="sh-nav-item"><a href="about.html">About</a></li>
+                    <li class="sh-nav-item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                    <li class="sh-nav-item"><a href="faq.html">FAQ</a></li>
+                    <li class="sh-nav-item"><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <span class="current">Practical 04</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 04: DOM & Interactivity</span>
+        </div>
+    </div>
+
+    <main id="main-content" class="sh-main">
+        <header style="margin-bottom: 2rem;">
+            <h1 class="text-gradient">DOM Manipulation, Event Handling & Interactivity</h1>
+            <p class="lead-text">Interactive UI widgets including collapsible accordion, accessible modal popup, image/content slider, notifications, and client-side preference persistence in localStorage.</p>
+        </header>
+
+        <div class="grid grid-2" style="margin-bottom: 2rem;">
+            <!-- Component 1: Accordion FAQ -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>1. Dynamic Accordion Component</h3>
+                    <span class="badge badge-primary">DOM Events</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">Click any item below to expand the body while auto-collapsing siblings.</p>
+                <div>
+                    <button class="p4-faq-header"><span>What is StudentHub?</span> <span>▼</span></button>
+                    <div class="p4-faq-body">StudentHub is a comprehensive campus portal for CHARUSAT students, faculty, and administrative management.</div>
+
+                    <button class="p4-faq-header"><span>How are DOM listeners attached?</span> <span>▼</span></button>
+                    <div class="p4-faq-body">EventListeners are registered via <code>addEventListener('click', handler)</code> allowing scalable event-driven interactivity without inline JS.</div>
+
+                    <button class="p4-faq-header"><span>Is localStorage persistent?</span> <span>▼</span></button>
+                    <div class="p4-faq-body">Yes, localStorage persists key-value pairs across browser sessions until explicitly cleared.</div>
+                </div>
+            </div>
+
+            <!-- Component 2: Modal Popup & Notifications -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>2. Modal Popup & Toast Banners</h3>
+                    <span class="badge badge-info">Window Modals</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 14px;">Trigger accessible modal dialogues and dynamic floating notifications.</p>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px;">
+                    <button id="open-demo-modal" class="btn btn-primary">Open Modal Dialog</button>
+                    <button id="p4-trigger-toast" class="btn btn-secondary">Trigger Dynamic Toast</button>
+                </div>
+
+                <div class="card" style="background: var(--bg-subtle);">
+                    <h4>User UI Preference (localStorage)</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 6px 0 10px;">Select a base font size. The preference is stored and restored upon page reload.</p>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="p4-font-size" class="form-label">Base Font Size:</label>
+                        <select id="p4-font-size" class="form-select">
+                            <option value="15px">15px - Compact</option>
+                            <option value="16px">16px - Standard Default</option>
+                            <option value="18px">18px - Large / High Readability</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Component 3: Content / Image Slider -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <div class="card-header">
+                <h3>3. Interactive Content / Event Slider</h3>
+                <span id="p4-slide-counter" class="badge badge-neutral">Slide 1 of 3</span>
+            </div>
+            <div class="slider-box">
+                <div class="p4-slide">
+                    <span class="badge badge-primary">Campus Highlight</span>
+                    <h2 style="margin: 12px 0 6px;">CHARUSAT AI & Cloud Symposium 2026</h2>
+                    <p style="color: var(--text-muted); max-width: 600px;">Join international keynote speakers discussing generative models and distributed infrastructure.</p>
+                </div>
+                <div class="p4-slide" style="display: none;">
+                    <span class="badge badge-success">Academics</span>
+                    <h2 style="margin: 12px 0 6px;">Semester III Practical Examinations</h2>
+                    <p style="color: var(--text-muted); max-width: 600px;">Review timetable and submission guidelines on the StudentHub portal dashboard.</p>
+                </div>
+                <div class="p4-slide" style="display: none;">
+                    <span class="badge badge-warning">Sports & Culture</span>
+                    <h2 style="margin: 12px 0 6px;">Spoural 2027 Annual Sports Meet</h2>
+                    <p style="color: var(--text-muted); max-width: 600px;">Inter-college athletic championships, cricket tournaments, and basketball leagues.</p>
+                </div>
+            </div>
+            <div class="card-footer" style="justify-content: center; gap: 14px;">
+                <button id="p4-prev-slide" class="btn btn-sm btn-secondary">◀ Previous Slide</button>
+                <button id="p4-next-slide" class="btn btn-sm btn-primary">Next Slide ▶</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Element -->
+    <div id="p4-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>🎉 Interactive Modal Dialog</h3>
+                <button id="close-demo-modal" class="modal-close" aria-label="Close modal">×</button>
+            </div>
+            <div class="modal-body">
+                <p style="color: var(--text-secondary); line-height: 1.7;">This modal was triggered via JavaScript DOM event listeners. It captures focus, supports Escape-key dismiss, and closes on backdrop click!</p>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content: flex-end; margin-top: 20px;">
+                <button onclick="document.getElementById('p4-modal').classList.remove('active')" class="btn btn-primary">Dismiss Modal</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div><strong>StudentHub Portal</strong> — CHARUSAT FTE | ITUE203 Practical 04</div>
+            <ul class="sh-footer-links">
+                <li><a href="../index.html">Practicals Hub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

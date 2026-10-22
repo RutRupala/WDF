@@ -1,0 +1,16 @@
+[
+  {
+    "fullname": "Aarav Sharma",
+    "email": "aarav.s@charusat.edu.in",
+    "mobile": "9876543210",
+    "course": "B.Tech IT",
+    "timestamp": "2026-10-18 10:15:00"
+  },
+  {
+    "fullname": "Diya Joshi",
+    "email": "diya.j@charusat.edu.in",
+    "mobile": "9825012345",
+    "course": "B.Tech CSE",
+    "timestamp": "2026-10-18 11:30:22"
+  }
+]

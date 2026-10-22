@@ -1,0 +1,18 @@
+[
+  {"id": 101, "name": "Aarav Patel", "rollNo": "24IT001", "department": "Information Technology", "semester": 3, "cgpa": 9.12, "email": "aarav.p@charusat.edu.in", "status": "Active"},
+  {"id": 102, "name": "Diya Joshi", "rollNo": "24CSE015", "department": "Computer Science", "semester": 3, "cgpa": 8.94, "email": "diya.j@charusat.edu.in", "status": "Active"},
+  {"id": 103, "name": "Karan Verma", "rollNo": "24CE089", "department": "Computer Engineering", "semester": 3, "cgpa": 7.85, "email": "karan.v@charusat.edu.in", "status": "Active"},
+  {"id": 104, "name": "Riya Shah", "rollNo": "24IT022", "department": "Information Technology", "semester": 3, "cgpa": 9.40, "email": "riya.s@charusat.edu.in", "status": "Active"},
+  {"id": 105, "name": "Manan Desai", "rollNo": "24AIML004", "department": "Artificial Intelligence", "semester": 3, "cgpa": 8.70, "email": "manan.d@charusat.edu.in", "status": "Active"},
+  {"id": 106, "name": "Khushi Mehta", "rollNo": "24CSE042", "department": "Computer Science", "semester": 3, "cgpa": 8.32, "email": "khushi.m@charusat.edu.in", "status": "Active"},
+  {"id": 107, "name": "Yash Bhatt", "rollNo": "24IT035", "department": "Information Technology", "semester": 3, "cgpa": 7.95, "email": "yash.b@charusat.edu.in", "status": "Active"},
+  {"id": 108, "name": "Tanvi Dave", "rollNo": "24CE044", "department": "Computer Engineering", "semester": 3, "cgpa": 9.05, "email": "tanvi.d@charusat.edu.in", "status": "Active"},
+  {"id": 109, "name": "Devansh Trivedi", "rollNo": "24AIML018", "department": "Artificial Intelligence", "semester": 3, "cgpa": 8.15, "email": "devansh.t@charusat.edu.in", "status": "Active"},
+  {"id": 110, "name": "Ananya Sharma", "rollNo": "24IT051", "department": "Information Technology", "semester": 3, "cgpa": 9.60, "email": "ananya.s@charusat.edu.in", "status": "Active"},
+  {"id": 111, "name": "Parth Prajapati", "rollNo": "24CSE065", "department": "Computer Science", "semester": 3, "cgpa": 8.45, "email": "parth.p@charusat.edu.in", "status": "Active"},
+  {"id": 112, "name": "Isha Pandya", "rollNo": "24CE012", "department": "Computer Engineering", "semester": 3, "cgpa": 8.88, "email": "isha.p@charusat.edu.in", "status": "Active"},
+  {"id": 113, "name": "Siddharth Rana", "rollNo": "24IT019", "department": "Information Technology", "semester": 3, "cgpa": 7.60, "email": "siddharth.r@charusat.edu.in", "status": "Active"},
+  {"id": 114, "name": "Nidhi Solanki", "rollNo": "24CSE033", "department": "Computer Science", "semester": 3, "cgpa": 8.90, "email": "nidhi.s@charusat.edu.in", "status": "Active"},
+  {"id": 115, "name": "Kavya Soni", "rollNo": "24AIML029", "department": "Artificial Intelligence", "semester": 3, "cgpa": 9.25, "email": "kavya.s@charusat.edu.in", "status": "Active"},
+  {"id": 116, "name": "Ronak Panchal", "rollNo": "24IT060", "department": "Information Technology", "semester": 3, "cgpa": 8.10, "email": "ronak.p@charusat.edu.in", "status": "Active"}
+]

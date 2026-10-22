@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Profile - StudentHub">
+    <title>Student Profile - StudentHub Portal | Practical 2</title>
+    <link rel="stylesheet" href="../shared/css/common.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="sh-header">
+        <div class="sh-nav-container">
+            <a href="index.html" class="sh-brand">
+                <div class="sh-brand-badge">SH</div>
+                <div class="sh-brand-text">
+                    <span class="title">StudentHub</span>
+                    <span class="subtitle">ITUE203 Practical 02</span>
+                </div>
+            </a>
+            <nav aria-label="Primary Site Navigation">
+                <ul class="sh-nav-menu">
+                    <li class="sh-nav-item"><a href="index.html">Home</a></li>
+                    <li class="sh-nav-item"><a href="about.html">About</a></li>
+                    <li class="sh-nav-item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="sh-nav-item"><a href="events.html">Events</a></li>
+                    <li class="sh-nav-item active"><a href="profile.html">Profile</a></li>
+                    <li class="sh-nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sh-nav-actions">
+                <button type="button" class="sh-theme-btn" id="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+                <button type="button" class="sh-hamburger" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sh-breadcrumb-banner">
+        <div class="sh-banner-inner">
+            <nav class="sh-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Practicals Hub</a>
+                <span class="sep">/</span>
+                <a href="index.html">Practical 02</a>
+                <span class="sep">/</span>
+                <span class="current">Profile</span>
+            </nav>
+            <span class="sh-practical-tag">Practical 02: Semantic HTML5</span>
+        </div>
+    </div>
+
+    <main id="main-content" class="sh-main">
+        <section class="card" style="margin-bottom: 2rem;">
+            <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+                <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--primary-light); color: var(--primary); display: grid; place-items: center; font-size: 2rem; font-weight: 700;">
+                    DP
+                </div>
+                <div>
+                    <h1 style="font-size: 1.8rem; margin: 0 0 6px;">Dev Patel</h1>
+                    <p style="color: var(--text-muted); margin: 0 0 10px;">Student ID: <strong>24IT042</strong> | Department of Information Technology</p>
+                    <span class="badge badge-success">Academic Status: Active</span>
+                    <span class="badge badge-primary">Semester III (2026-27)</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-2">
+            <article class="card">
+                <header class="card-header">
+                    <h2>Academic Credentials</h2>
+                </header>
+                <dl style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 0.95rem;">
+                    <dt style="color: var(--text-muted);">Enrollment No:</dt>
+                    <dd><strong>24IT042</strong></dd>
+                    <dt style="color: var(--text-muted);">Degree Program:</dt>
+                    <dd>B.Tech Information Technology</dd>
+                    <dt style="color: var(--text-muted);">Current Cumulative GPA:</dt>
+                    <dd><strong>8.84 / 10.0</strong></dd>
+                    <dt style="color: var(--text-muted);">Academic Advisor:</dt>
+                    <dd>Dr. Martin Parmar</dd>
+                </dl>
+            </article>
+
+            <article class="card">
+                <header class="card-header">
+                    <h2>Personal & Contact Details</h2>
+                </header>
+                <dl style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 0.95rem;">
+                    <dt style="color: var(--text-muted);">Institutional Email:</dt>
+                    <dd><a href="mailto:24it042@charusat.edu.in">24it042@charusat.edu.in</a></dd>
+                    <dt style="color: var(--text-muted);">Contact Phone:</dt>
+                    <dd>+91 98765 43210</dd>
+                    <dt style="color: var(--text-muted);">Campus Residence:</dt>
+                    <dd>Hostel Block C, Room 204</dd>
+                    <dt style="color: var(--text-muted);">Emergency Contact:</dt>
+                    <dd>+91 98250 11223</dd>
+                </dl>
+            </article>
+        </div>
+    </main>
+
+    <footer class="sh-footer">
+        <div class="sh-footer-inner">
+            <div><strong>StudentHub Portal</strong> — CHARUSAT FTE | ITUE203 Practical 02</div>
+            <ul class="sh-footer-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../shared/js/common.js"></script>
+</body>
+</html>
